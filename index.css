@@ -14,9 +14,9 @@ body {
 }
 .container {
   width: 700px;
-  height: 500px;
+  height: 100%;
   background-color: #a69bb63f;
-  margin-top: 10px;
+  margin-top: 10px 2px;
   padding: 2rem;
   border-radius: 20px;
   overflow: hidden;
@@ -24,6 +24,7 @@ body {
 }
 #fortune {
   margin: 1.5rem;
+  padding: 5px;
   line-height: 130%;
   text-align: center;
   font-size: 24px;
