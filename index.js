@@ -32,7 +32,7 @@ let quotes = [
 ];
 
 let firstHeading = (document.querySelector("h1").innerHTML =
-  "Words of Affirmation App.");
+  "🧞‍♂️Words of Affirmation🧞‍♂️");
 
 // //let firstStyle = (document.querySelector("body").style.backgroundColor =
 //   "grey");
@@ -60,10 +60,10 @@ let fortune = document.getElementById("fortune");
 
 const showQuotes = () => {
   fortune.innerHTML = quoteGenerator(quotes);
-  button.innerHTML = "Come back tomorrow!";
+  button.innerHTML = "Come Back Tomorrow!";
   button.style.cursor = "default";
 
-  button.removeEventListener("click", showQuotes);
+  //button.removeEventListener("click", showQuotes);
 };
 
 button.addEventListener("click", showQuotes);

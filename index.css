@@ -1,34 +1,70 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-color: wheat;
-  font-family: "Raleway", sans-serif;
-  width: 70%;
-  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
 }
 .container {
+  width: 700px;
+  height: 500px;
   background-color: #a69bb63f;
-  margin-top: 50px;
-  padding: 50px 15px;
+  margin-top: 10px;
+  padding: 2rem;
+  border-radius: 20px;
+  overflow: hidden;
   border: 2px solid black;
-  height: 300px;
 }
 #fortune {
+  margin: 1.5rem;
+  line-height: 130%;
   text-align: center;
   font-size: 24px;
 }
 #center {
+  align-self: center;
+  margin-top: 5%;
   text-align: center;
   font-size: 3em;
   color: #459287;
 }
-#btn-container {
-  width: fit-content;
-  margin: auto;
-}
 
 #btn {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  align-items: center;
+  width: 140px;
+  height: 60px;
+  margin: 0 auto;
+  background-color: rgb(255, 36, 72);
   padding: 10px;
-  font-size: 16px;
-  border: 5px solid brown;
-  border-radius: 5px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  transition: 0.5s;
   color: #030303;
+  box-shadow: 0 5px 20px rgba(253, 19, 58, 0.25);
+}
+#btn:hover {
+  --webkit-transform: scale(1.05);
+  --ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+@media only screen and (min-width: 480px) and (max-width: 600px) {
+  .btn {
+    width: 140px;
+    height: 60px;
+    margin: 0 auto;
+    background-color: rgb(255, 36, 72);
+    padding: 10px;
+    font-size: 1.2rem;
+  }
 }
