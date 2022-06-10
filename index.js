@@ -31,6 +31,15 @@ let quotes = [
   "Man is by nature a social animal; an individual who is unsocial naturally and not accidentally is either beneath our notice or more than human. Society is something that precedes the individual. Anyone who either cannot lead the common life or is so self-sufficient as not to need to, and therefore does not partake of society, is either a beast or a god. ",
 ];
 
+let firstHeading = (document.querySelector("h1").innerHTML =
+  "Words of Affirmation App.");
+
+// //let firstStyle = (document.querySelector("body").style.backgroundColor =
+//   "grey");
+//let first = document.body.children[0];
+//first.innerHTML = "This is my message App.!";
+//first.parentNode.style.backgroundColor = "beige";
+
 const quoteGenerator = (quotes) => {
   let thoughts = "";
   let num = Math.floor(Math.random() * 30);
@@ -46,5 +55,17 @@ const quoteGenerator = (quotes) => {
   }
 };
 
+let button = document.getElementById("btn");
+let fortune = document.getElementById("fortune");
+
+const showQuotes = () => {
+  fortune.innerHTML = quoteGenerator(quotes);
+  button.innerHTML = "Come back tomorrow!";
+  button.style.cursor = "default";
+
+  button.removeEventListener("click", showQuotes);
+};
+
+button.addEventListener("click", showQuotes);
+
 quoteGenerator(quotes);
-console.log(quoteGenerator(quotes));
