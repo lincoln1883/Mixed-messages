@@ -18,9 +18,9 @@ body {
   background-color: #a69bb63f;
   margin-top: 10px 2px;
   padding: 2rem;
-  border-radius: 20px;
+/*   border-radius: 20px; */
   overflow: hidden;
-  border: 2px solid black;
+/*   border: 2px solid black; */
 }
 #fortune {
   margin: 1.5rem;
